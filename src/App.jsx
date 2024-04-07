@@ -1,5 +1,5 @@
 import article from "./data/article.json"
-
+import stats from './data/stats.json'
 import {
   Section,
   Container,
@@ -9,7 +9,7 @@ import {
   CryptoHistory,
   ForbesList,
 } from 'components';
-import stats from './data/stats.json'
+
 
 export const App = () => {
   return (
