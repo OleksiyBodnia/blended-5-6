@@ -1,3 +1,5 @@
+import article from "./data/article.json"
+
 import {
   Section,
   Container,
@@ -13,7 +15,7 @@ export const App = () => {
     <Section>
       <Container>
         <Heading title="Task 1 Blog Card" bottom />
-        <BlogCard />
+        <BlogCard data={article}/>
 
         <Heading title="Task 2 Statistics" top bottom />
         <Statistics title="Main Statistics" />
