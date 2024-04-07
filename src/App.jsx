@@ -1,5 +1,7 @@
 import article from "./data/article.json"
 import stats from './data/stats.json'
+import forbes from './data/forbes.json'
+
 import {
   Section,
   Container,
@@ -22,7 +24,7 @@ export const App = () => {
         <Statistics title="Main Statistics" stats={stats} />
 
         <Heading title="Task 3 Forbes list" top bottom />
-        <ForbesList />
+        <ForbesList forbes={forbes} />
 
         <Heading title="Task 4 Crypto history" top bottom />
         <CryptoHistory />
