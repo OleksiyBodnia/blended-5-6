@@ -1,6 +1,7 @@
-import article from "./data/article.json"
-import stats from './data/stats.json'
-import forbes from './data/forbes.json'
+import article from './data/article.json';
+import stats from './data/stats.json';
+import forbes from './data/forbes.json';
+import transactions from 'data/transactions.json';
 
 import {
   Section,
@@ -12,13 +13,12 @@ import {
   ForbesList,
 } from 'components';
 
-
 export const App = () => {
   return (
     <Section>
       <Container>
         <Heading title="Task 1 Blog Card" bottom />
-        <BlogCard data={article}/>
+        <BlogCard data={article} />
 
         <Heading title="Task 2 Statistics" top bottom />
         <Statistics title="Main Statistics" stats={stats} />
@@ -27,7 +27,7 @@ export const App = () => {
         <ForbesList forbes={forbes} />
 
         <Heading title="Task 4 Crypto history" top bottom />
-        <CryptoHistory />
+        <CryptoHistory items={transactions} />
       </Container>
     </Section>
   );
